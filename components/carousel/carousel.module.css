@@ -1,0 +1,26 @@
+.imageContainer {
+    height: 200px;
+    max-width: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0px;
+}
+  
+.inactive {
+    display: none;
+}
+
+.arrow img {
+    max-width: 50px;
+}
+  
+.caption {
+    background-color: rgba(16, 46, 53, 0.5);
+    padding: 10px;
+    margin: 0px 50px;
+}
