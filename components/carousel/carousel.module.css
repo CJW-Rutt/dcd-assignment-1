@@ -1,3 +1,8 @@
+.carouselContainer {
+    display: flex;
+    justify-content: center;
+}
+
 .imageContainer {
     height: 200px;
     max-width: 400px;

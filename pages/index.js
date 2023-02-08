@@ -5,8 +5,14 @@ import styles from '@/styles/Home.module.css'
 import Link from 'next/link'
 import Arrows from '@/components/arrows'
 import Header from '@/components/header'
+import { Roboto } from '@next/font/google'
 
-const inter = Inter({ subsets: ['latin'] })
+//const inter = Inter({ subsets: ['latin'] })
+
+const roboto = Roboto({
+  weight: '400',
+  subsets: ['latin'],
+})
 
 export default function Home() {
   return (
@@ -22,20 +28,23 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
         <Header />
-        <div>
+        <div className={styles.body_container}>
           <h1>
-            An investment in knowledge pays the best interest.
+            An investment in<br /> knowledge pays the best<br />  interest.
           </h1>
+          <div className={styles.underline}></div>
           <p>
             Different than a college or university, the British Columbia Institute of Technology offers practical, flexible, applied education with instructors who have direct, hands-on experience in their field.
           </p>
+          <div className={styles.button_container}> 
+            <Link  href="/about" passHref >
+              <button className={styles.home_button}>More About Us</button>
+            </Link>
+            <Link  href="/contact" passHref>
+              <button className={styles.home_button}>Contact Us</button>
+            </Link>
+          </div>
         </div>
-        <a>
-          <button className={styles.button1}>More About Us</button>
-        </a>
-        <a>
-          <button className={styles.button2}>Contact Us</button>
-        </a>
         <Arrows />
       </main>
     </>

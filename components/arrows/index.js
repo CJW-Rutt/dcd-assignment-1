@@ -9,54 +9,64 @@ export default function Arrows() {
     
     if ( router.pathname == "/") {
       return(
-        <Link href="/about" passHref >
-          <span>
-            <Image 
-              src="/icons/downwardArrow.png" 
-              width={40}
-              height={50}
-            />
-          </span>
-        </Link>
+        <div className={styles.arrow_container}>
+          <div className={styles.inner_arrow_container}>
+            <Link href="/about" passHref >
+              <span>
+                <Image 
+                  src="/icons/downwardArrow.png" 
+                  width={40}
+                  height={50}
+                />
+              </span>
+            </Link>
+          </div>
+        </div>
       )
     }
 
     if ( router.pathname == "/about") {
       return(
-        <div>
-          <Link href="/" passHref >
-            <span>
-              <Image 
-                src="/icons/upwardArrow.png" 
-                width={40}
-                height={50}
-              />
-            </span>
-          </Link>
-          <Link href="/contact" passHref >
-            <span>
-              <Image 
-                src="/icons/downwardArrow.png" 
-                width={40}
-                height={50}
-              />
-            </span>
-          </Link>
+        <div className={styles.arrow_container}>
+          <div className={styles.inner_arrow_container}>
+            <Link href="/" passHref >
+              <span>
+                <Image 
+                  src="/icons/upwardArrow.png" 
+                  width={40}
+                  height={50}
+                />
+              </span>
+            </Link>
+            <Link href="/contact" passHref >
+              <span>
+                <Image 
+                  src="/icons/downwardArrow.png" 
+                  width={40}
+                  height={50}
+                />
+              </span>
+            </Link>
+          </div>
         </div>
       )
     }
 
     if ( router.pathname == "/contact") {
       return(
-        <Link href="/about" passHref >
-          <span>
-            <Image 
-                  src="/icons/upwardArrow.png" 
-                  width={40}
-                  height={50}
-            />
-          </span>
-        </Link>
+        <div className={styles.arrow_container}>
+          <div className={styles.inner_arrow_container}>
+            <Link href="/about" passHref >
+              <span>
+                <Image 
+                      src="/icons/upwardArrow.png" 
+                      width={40}
+                      height={50}
+                />
+              </span>
+            </Link>
+          </div>
+        </div>
       )
     }
   

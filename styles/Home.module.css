@@ -1,3 +1,40 @@
 .main {
   background-image: url('/background/backgroundMountain.jpg');
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+  color: white;
+  height: 100vh;
+  font-family: 'roboto';
+}
+
+.body_container {
+  max-width: 500px;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-left: 250px;
+  margin-bottom: 50px;
+  padding-bottom: 50px;
+}
+
+.underline {
+  width: 70%;
+  background-color: var(--secondary-color);
+  height: 3px;
+}
+
+.home_button {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  border-radius: 5px;
+  padding: 5px;
+  margin-left: 5px;
+}
+
+.home_button:hover {
+  background-color: var(--primary-color);
+  color: var(--quinary-color);
 }
