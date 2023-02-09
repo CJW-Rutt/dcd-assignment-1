@@ -1,0 +1,66 @@
+.main {
+    background-image: url('/background/backgroundMountainUpsideDown.jpg');
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    color: white;
+    height: 100vh;
+    font-family: 'roboto';
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.main_title {
+    text-align: center;
+}
+
+.color {
+    background-color: #ccc;
+}
+
+  .main_title p {
+    margin-top: 100px;
+  }
+
+  .form_container {
+    display:flex;
+    justify-content: center;
+  }
+
+  .form {
+    max-width: 600px;
+  }
+
+  .first_name {
+    width: 50%;
+    display: inline-block;
+  }
+
+  .last_name {
+    width: 50%;
+    display: inline-block;
+  }
+
+  .email {
+    width: 100%;
+    display: inline-block;
+  }
+  
+  .first_name_input {
+    width: 50%;
+  }
+
+  .last_name_input {
+    width: 50%;
+  }
+
+  .email_input {
+    width: 100%
+  }
+
+  @media only screen and (max-width: 1000px) {
+    .form {
+      max-width: 350px;
+    }
+  }

@@ -39,3 +39,16 @@
 .department_list li {
   margin-bottom: 25px;
 }
+
+@media only screen and (max-width: 1000px) {
+  .about_content {
+    max-width: 420px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .about_content {
+    max-width: 220px;
+  }
+
+}

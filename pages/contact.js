@@ -1,15 +1,15 @@
-import { useRouter } from 'next/router'
 import Arrows from '@/components/arrows'
 import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from '@next/font/google'
-import styles from '@/styles/Home.module.css'
+import styles from '@/styles/Contact.module.css'
 import Link from 'next/link'
 import Header from '@/components/header'
 
 
 
-export default function Home() {
+export default function Contact() {
+
     return (
       <>
         <Head>
@@ -22,7 +22,7 @@ export default function Home() {
         </Head>
         <main className={styles.main}>
           <Header />
-          <div>
+          <div className={styles.main_title}>
             <h1>
               Contact Us
             </h1>
@@ -31,21 +31,21 @@ export default function Home() {
             </p>
           </div>
           <div className={styles.form_container}>
-            <form>
+            <form className={styles.form}>
                 <fieldset>
                     <table>
                         <thead>
                             <tr>
-                                <label>First Name:</label>
-                                <input id="firstname" type="text" />
-                                <label>Last Name:</label>
-                                <input id="lastname" type="text" />
+                                <label className={styles.first_name}>First Name:</label>
+                                <label className={styles.last_name}>Last Name:</label>
+                                <input id="firstname" className={styles.first_name_input} type="text" />
+                                <input id="lastname" className={styles.last_name_input} type="text" />
                             </tr>
                         </thead>
                         <thead>
                                 <tr>
-                                    <label for="email">Email:</label>
-                                    <input id="email" type="text" />
+                                    <label className={styles.email}>Email:</label>
+                                    <input id="email" className={styles.email_input} type="text" />
                                 </tr>
                         </thead>
                     </table>

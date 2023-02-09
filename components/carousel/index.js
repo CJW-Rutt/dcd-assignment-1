@@ -45,13 +45,9 @@ export default function ImageCarousel() {
                 style={{ backgroundImage: `url(${images[currentIndex].src})` }} 
                 id="carouselImage"
             >
-                <div onClick={handlePrevious} className={styles.arrow}>
-                    <Image src="/icons/leftarrow.png" width={50} height={50} />
-                </div>
+                <Image onClick={handlePrevious} src="/icons/leftarrow.png" width={50} height={50} />
                 <div className={styles.caption} id="testOnImageHere">{images[currentIndex].caption}</div>
-                <div onClick={handleNext} className={styles.arrow}>
-                    <Image src="/icons/rightarrow.png" width={50} height={50} />
-                </div>
+                <Image onClick={handlePrevious} src="/icons/rightarrow.png" width={50} height={50} />
             </div>
       </div>
     );

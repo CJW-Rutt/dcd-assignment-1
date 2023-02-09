@@ -1,8 +1,39 @@
 .menu_overlay {
-    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    padding: 20px;
+    background-image: url('/background/menuBackground.png');
+    background-size: cover;
+    width: 250px;
+    height: 250px;
 }
 
 .hamgurger_container img {
     width: 40px;
     height: 30px;
+}
+
+.menu_overlay h1 {
+    margin-left: 20px;
+}
+
+.menu_overlay ul {
+    list-style: none;
+    text-align: right;
+    margin-right: 50px;
+}
+
+.menu_overlay ul li {
+    margin-top: 15px;
+}
+
+
+
+.menu_overlay ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    margin-top: 5px;
 }
