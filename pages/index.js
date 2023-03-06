@@ -1,18 +1,9 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import { Inter } from '@next/font/google'
 import styles from '@/styles/Home.module.css'
 import Link from 'next/link'
 import Arrows from '@/components/arrows'
 import Header from '@/components/header'
-import { Roboto } from '@next/font/google'
-
-//const inter = Inter({ subsets: ['latin'] })
-
-const roboto = Roboto({
-  weight: '400',
-  subsets: ['latin'],
-})
 
 export default function Home() {
   return (

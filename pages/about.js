@@ -1,20 +1,8 @@
 import Head from 'next/head'
-import Image from 'next/image'
-import { Inter } from '@next/font/google'
 import styles from '@/styles/About.module.css'
-import Link from 'next/link'
 import Arrows from '@/components/arrows'
 import Header from '@/components/header'
 import ImageCarousel from '@/components/carousel/index'
-import { useState } from 'react'
-import { Roboto } from '@next/font/google'
-
-const inter = Inter({ subsets: ['latin'] })
-
-const roboto = Roboto({
-    weight: '400',
-    subsets: ['latin'],
-})
 
 export default function About() {
 
@@ -30,9 +18,9 @@ export default function About() {
             </Head>
             <main className={styles.main}>
             <Header />
+            <h1 className={styles.h1}>About Us</h1>
             <div className={styles.about_container}>
                 <div className={styles.inner_about_container}>
-                    <h1>About Us</h1>
                     <div className={styles.about_content}>
                         <p>We are proud to deliver an aducation that goes beyond textbooks and classrooms.</p>
                         <p>Our students gain the technical skills, real-world experience, and problem-solving ability needed to embrace complexity and lead innovation in a rapidly changing workforce.</p>
