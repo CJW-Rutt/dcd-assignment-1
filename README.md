@@ -12,3 +12,5 @@ An assignment with three pages. The homepage has several components that make up
 
 ### Command Lines
 Use npm run dev and then access the site by using localhost:3000/ in your browser.
+
+### Grade: 93%
